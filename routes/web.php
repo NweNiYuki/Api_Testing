@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('currency','App\Http\Controllers\CurrencyController@index');
+Route::post('currency','App\Http\Controllers\CurrencyController@exchangeCurrency');
